@@ -15,7 +15,7 @@ None
 
 Initial release
 
-Next release will support disabling the double-click functionality since some people presumably might not want that. 
+Next release will support disabling the double-click functionality.
 
 ### 0.0.1
 
