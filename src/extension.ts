@@ -75,20 +75,6 @@ export function activate(context: vscode.ExtensionContext) {
     };
 
     context.subscriptions.push(vscode.commands.registerCommand(constants.SELECT_QUOTES_COMMAND_ID, run(constants.DEFAULT_SELECTION)));
-    
-    context.subscriptions.push(
-        vscode.window.onDidChangeTextEditorSelection(e => {
-            if (constants.isMouseEvent(e) && constants.isOnlyOneActiveSelection(e)) 
-            {
-                let activeSelection: vscode.Selection = e.selections[0];
-
-                if (constants.isActualSelection(activeSelection) && constants.isSelectionOnOneLine(activeSelection))
-                {
-                    run(activeSelection)();
-                }
-            }
-        })
-    );
 }
 
 export function deactivate() {}
