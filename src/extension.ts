@@ -16,7 +16,7 @@ export function activate(context: vscode.ExtensionContext) {
             {
                 // The following has to be done (setting the charNumber one character backwards), 
                 // because otherwise the selection will include the opening quote as well.
-                // This is due to "charNumber += delta" (line 27) not being called
+                // This is due to "charNumber += delta" (line 28) not being called
                 // because of the break statement that follows.
                 charNumber += direction === SearchDirection.BACKWARDS ? 1 : 0;
 

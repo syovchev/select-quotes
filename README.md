@@ -4,8 +4,7 @@ A Visual Studio Code extension which makes selecting strings less stressful.
 
 ## Usage
 
-* Good old double-click will now select the whole content of a string. 
-* Alternatively it can be done with (`Alt+Q`)
+* When the cursor is inside a string (`Alt+Q`) will select the whole string content.
 
 ## Requirements
 
@@ -13,10 +12,9 @@ None
 
 ## Release Notes
 
-Initial release
+For now I've removed the double-click functionality, since VS Code doesn't support a double-click event, respecitevly a double-click event handler. 
+This results in buggy behaviour with the current implementation. Maybe, in the future I'll look more into this, but for now only `Alt+Q` will select string contents.
 
-Next release will support disabling the double-click functionality.
+### 0.0.2
 
-### 0.0.1
-
-Initial release of select-quotes
+Remove double-click functionality.

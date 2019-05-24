@@ -2,7 +2,7 @@
 	"name": "select-quotes",
 	"displayName": "select-quotes",
 	"description": "Select anything within quotes.",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "StAlYo",
 	"engines": {
 		"vscode": "^1.33.0"
